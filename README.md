@@ -4,11 +4,11 @@ Cancer research has seen many developments, but we still do not know eniugh abou
 
 ## Prerequisites
 
-Dataset Used:[Gene Expression Cancer RNA-Seq Data Set ](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) 
+Dataset Used: [Gene Expression Cancer RNA-Seq Data Set ](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) 
 
 Source: UCI Repository Archive
 
-This project was made using [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
+This project was made using [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true).
 
 ## Problem Statement
 
