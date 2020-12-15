@@ -1,12 +1,11 @@
-# outlier_detection_gene_expression_LOF
-Outlier detection in gene expression for Cancer patients using LOF Algorithm.
 # Outlier Detection in Gene Expression Values 
 
-When a patient has cancer, multiple genetic changes occur, some of which cause the cancer to spread. Hence, gene expression measurements help us in monitoring these changes.
+Cancer research has seen many developments, but we still do not know eniugh about the disease. When a patient has cancer, multiple genetic changes occur, some of which cause the cancer to spread. Even anomalies in data can some times be the starting point of some vital research. Monitoring gene expression measurements is one such way of  keeping track of genetic changes in Cancer Patients. This code identies outliers in gene expression data of Breast Cancer Patients.
 
 ## Prerequisites
 
 Dataset Used:[Gene Expression Cancer RNA-Seq Data Set ](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) 
+
 Source: UCI Repository Archive
 
 This project was made using [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb#recent=true)
@@ -56,18 +55,17 @@ The LOF algorithm finds a score for each sample based on which outliers are dete
 
 **Sci-kit libraries have only been used for Data Visualisation. No in-built libraries have been used for the implementation of DBSCAN Algorithm, the code is purely for understanding the algorithmic logic.**
 
-## Inference
-Outliers in such a dataset could mean an error in data collection or measurement which if not removed would cause major errors in further analysis. It could also mean a special case seen in Cancer Patients (and usually if you have more outlier tuples like this one, it is definitely investigated) – opens up research avenue. [Cancer Research is a huge field in itself, the amount we know about the disease is actually very little and a cure has not been found yet for many cancers.]
+## Inference & Use Cases
 
-
-## Use Cases
+Outliers in gene expression values could have multiple interpretations, especially in case of cancer. Some interpretations are- 
+* Outliers in such a dataset could mean an error in data collection or measurement which if not removed would cause major errors in further analysis. 
+* They could also mean a special case seen in Cancer Patients (and usually if you have more outlier tuples like this one, it is definitely investigated) – opens up research avenue.Such information is of vital importance.
 
 ## Points to be Noted
 
-* Threshold for LOF Score has been assumed. It essentially needs domain expertise to be defined.
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Manhattan distance has been used as the distance metric. I have apporached the problem from an algortihmic standpoint, in order to fit any exact use case, domain experts need to carry out the feature selection, choose an appropriate distance metric or even algorithm based on what kind of an output is desired.
+* Estimation of Hyper parameters:
+1. Estimating k value: A plot of Error rate vs K should be plotted (elbow curve) and the point at the elbow like protrusion of the resulting curve gives us an optimal K value.
+But in this case,the gene sequencing dataset does not have any labels and the LOF algorithm also isn't supervised or doesn't involve prediction of classes to which tuples belong. Hence, it wasn't possible to plot it for the given dataset and check.However, using the elbow method, it has been estimated that optimal K value is approximately sqrt(n) where n is the number of tuples in the dataset.[Resource](https://towardsdatascience.com/how-to-find-the-optimal-value-of-k-in-knn-35d936e554eb) So for eg: when df is considered only for BRCA, n=300; therefore K is taken as sqrt(300) which is approximately 17.
+2. Estimating a threshold for LOF score: 
+This is domain or application specific and needs a domain expert to specify this value. Any other approach couldn't be found at present hence, it has been randomly chosen at 1.5.
