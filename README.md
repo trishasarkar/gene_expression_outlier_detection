@@ -53,7 +53,7 @@ Algorithm used: Local Outlier Factor (LOF)
 The LOF algorithm finds a score for each sample based on which outliers are detected in the sample.
 * Data Visualisation: Scatter Plot to see identification of Local Outliers
 
-**Sci-kit libraries have only been used for Data Visualisation. No in-built libraries have been used for the implementation of DBSCAN Algorithm, the code is purely for understanding the algorithmic logic.**
+**Inbuilt libraries have only been used for Data Visualisation and Dataframes. No in-built libraries have been used for the implementation of DBSCAN Algorithm, the code is purely for understanding the algorithmic logic.**
 
 ## Inference & Use Cases
 
