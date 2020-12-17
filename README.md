@@ -63,6 +63,10 @@ Outliers in gene expression values could have multiple interpretations, especial
 
 [Reference](https://www.longdom.org/open-access/robust-detection-of-outlier-samples-and-genes-in-expression-datasets-jpb-1000387.pdf)
 
+## Contributors
+
+* [Trisha Sarkar](https://github.com/trishasarkar)
+
 ## Points to be Noted
 
 * Manhattan distance has been used as the distance metric. I have approached the problem from an algorithmic standpoint, in order to fit any exact use case, domain experts need to carry out the feature selection, choose an appropriate distance metric or even algorithm based on what kind of an output is desired.
