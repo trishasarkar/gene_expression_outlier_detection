@@ -5,10 +5,12 @@ Cancer research has seen many developments, but we still do not know enough abou
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
-- [Problem Statement](#problem-statement)
-- [Local Outlier Factor Algorithm](#local-outlier-factor-algorithm)
-- [Procedure](#procedure)
+  - [Problem Statement](#problem-statement)
+  - [Local Outlier Factor Algorithm](#local-outlier-factor-algorithm)
+  - [Procedure](#procedure)
+  - [Inference & Use Cases](#inference-&-use-cases)
 - [Contributors](#contributors)
+- [Points to be Noted](#points-to-be-noted)
  
 ## Prerequisites
 
