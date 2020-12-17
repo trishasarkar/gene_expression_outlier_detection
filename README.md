@@ -2,6 +2,14 @@
 
 Cancer research has seen many developments, but we still do not know enough about the disease. When a patient has cancer, multiple genetic changes occur, some of which cause the cancer to spread. Even anomalies in data can sometimes be the starting point of some vital research. Monitoring gene expression measurements is one such way of  keeping track of genetic changes in Cancer Patients. This code identifies outliers in gene expression data of Breast Cancer Patients.
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Problem Statement](#problem-statement)
+- [Local Outlier Factor Algorithm](#local-outlier-factor-algorithm)
+- [Procedure](#procedure)
+- [Contributors](#contributors)
+ 
 ## Prerequisites
 
 Dataset Used: [Gene Expression Cancer RNA-Seq Data Set ](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) 
@@ -26,7 +34,6 @@ data.csv  - It contains the gene expression values for a variety of patients suf
 
 
 lables.csv - List of samples and the corresponding cancer which that patient is suffering from like BRCA- Breast Cancer, LUAD-Lung Adenocarcinoma, and so on.
-
 
 
 ## Local Outlier Factor Algorithm         
