@@ -11,6 +11,7 @@ Cancer research has seen many developments, but we still do not know enough abou
   - [Inference & Use Cases](#inference-&-use-cases)
 - [Contributors](#contributors)
 - [Points to be Noted](#points-to-be-noted)
+- [Additional resources](#additional-resources)
  
 ## Prerequisites
 
@@ -84,3 +85,11 @@ Outliers in gene expression values could have multiple interpretations, especial
 But in this case,the gene sequencing dataset does not have any labels and the LOF algorithm also isn't supervised or doesn't involve prediction of classes to which tuples belong. Hence, it wasn't possible to plot it for the given dataset and check.However, using the elbow method, it has been estimated that optimal K value is approximately sqrt(n) where n is the number of tuples in the dataset.[Resource](https://towardsdatascience.com/how-to-find-the-optimal-value-of-k-in-knn-35d936e554eb).So for eg: when df is considered only for BRCA, n=300; therefore K is taken as sqrt(300) which is approximately 17.
 2. Estimating a threshold for LOF score: 
 This is domain or application specific and needs a domain expert to specify this value. Any other approach couldn't be found at present hence, it has been randomly chosen at 1.5.
+
+## Additional Resources
+
+* [Local Outlier Factor Explained](https://youtu.be/7L23sCOZjns)(15K views, 252 likes as on 10th Jan 2023)
+* [Deck on Local outlier factor] (https://drive.google.com/file/d/1KUq5TND3ses6ZY9gXcp3sfO5V6YJeX3r/view)
+* [Gene Expression Outlier detection using LOF](https://medium.com/@trisha9sarkar/detailed-explanation-of-local-outlier-factor-gene-expression-outlier-detection-9a9a9c41e08b)
+* [Detecting outliers in Time Series Data using the Local Outlier Factor Algorithm #CodeWithMe](https://youtu.be/QEaRYwf2WbY) (5K views, 108 likes as on 10th Jan 2023)
+
